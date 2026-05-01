@@ -131,6 +131,7 @@
 
 .project-details .details-body {
   order: 1;
+  text-align: left;
 }
 
 .project-details[open] .details-body {
