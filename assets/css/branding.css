@@ -1,0 +1,38 @@
+.page-wrapper {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.branding-text {
+  text-align: center;
+  max-width: 960px;
+  margin: 115px auto 80px;
+}
+
+.branding-text h1 {
+  color: var(--text);
+  padding-bottom: 1rem;
+}
+
+.branding-text p {
+  font-size: 1.25rem;
+  text-align: left;
+}
+
+  /* contact text responsive */
+  @media (max-width: 800px) {
+    .branding-text h1 {
+      font-size: 2rem;
+      padding-bottom: 0.5rem;
+    }
+
+    .branding-text p {
+      font-size: 1rem;
+      padding: 0 1rem;
+    }
+  }
+
+.branding-img img {
+  margin-bottom: 3rem;
+  border-radius: 2rem;
+}

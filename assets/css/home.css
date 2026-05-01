@@ -1,0 +1,313 @@
+/* ==== HERO SECTION ==== */
+#hero {
+  padding: 5rem 1.5rem 4rem;
+  background: var(--bg);
+}
+
+.hero-inner {
+  max-width: 960px;
+  margin: 140px auto;
+  position: relative;
+}
+
+.hero-text {
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.hero-text h1 {
+  font-size: 3.5rem;
+  letter-spacing: -1px;
+  line-height: 1;
+  color: var(--text);
+}
+
+.hero-text p {
+  font-size: 1.75rem;
+  line-height: 1.1;
+  max-width: 70ch;
+}
+
+.hero-text a {
+  font-size: 1.25rem;
+}
+
+/* hero sticker container */
+.hero-stickers {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+/* hero-specific sticker positioning */
+.hero-stickers .sticker-squiggle-left {
+  top: -4.5rem;
+  left: -8rem;
+  width: 100px;
+  color: #8ADBFF;
+}
+
+.hero-stickers .sticker-heart.sticker-left {
+  top: -4rem;
+  left: 1rem;
+  transform: rotate(-4deg);
+}
+
+.hero-stickers .sticker-star.sticker-left {
+  top: 2rem;
+  left: -5rem;
+  transform: rotate(-34deg);
+}
+
+.hero-stickers .sticker-star.sticker-right {
+  top: -5.5rem;
+  right: 0%;
+}
+
+.hero-stickers .sticker-squiggle-right {
+  top: -4rem;
+  right: -7.5rem;
+  width: 90px;
+  color: #C7B8FF;
+}
+
+.hero-stickers .sticker-heart.sticker-right {
+  top: 2rem;
+  right: -6rem;
+  transform: rotate(-21deg);
+}
+
+.hero-stickers .sticker-heart.sticker-btm {
+  bottom: 3rem;
+  right: 19rem;
+  transform: rotate(-6deg);
+}
+
+.hero-stickers .sticker-star.sticker-btm {
+  bottom: -1rem;
+  left: 18.5rem;
+  transform: rotate(-44deg);
+}
+
+/* hero responsive */
+@media (max-width: 800px) {
+  .hero-text h1 {
+    font-size: 2.25rem;
+  }
+
+  .hero-text p {
+    font-size: 1.25rem;
+  }
+
+    /* sticker positioning */
+    .hero-stickers .sticker-squiggle-left {
+      top: -3rem;
+      left: -1rem;
+      width: 60px;
+      color: #8ADBFF;
+    }
+
+    .hero-stickers .sticker-heart.sticker-left {
+      top: -15%;
+      left: 4.5rem;
+      transform: rotate(-4deg);
+    }
+
+    .hero-stickers .sticker-star.sticker-left {
+      top: 1rem;
+      left: -0.5rem;
+      transform: rotate(-34deg);
+    }
+
+    .hero-stickers .sticker-star.sticker-right {
+      top: -1.75rem;
+      right: 4.5rem;
+    }
+
+    .hero-stickers .sticker-squiggle-right {
+      top: -2.75rem;
+      right: -1rem;
+      width: 60px;
+      color: #C7B8FF;
+    }
+
+    .hero-stickers .sticker-heart.sticker-right {
+      top: 2rem;
+      right: -1rem;
+      transform: rotate(-21deg);
+    }
+
+    .hero-stickers .sticker-heart.sticker-btm {
+      bottom: 4rem;
+      right: 2rem;
+      transform: rotate(-6deg);
+    }
+
+    .hero-stickers .sticker-star.sticker-btm {
+      bottom: -0.75rem;
+      left: 2rem;
+      transform: rotate(-44deg);
+    }
+}
+
+/* ==== FEATURED PROJECTS ==== */
+#featured {
+  padding: 4rem 0;
+  background-color: var(--altbg);
+}
+
+#featured .wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  text-align: center;
+}
+
+#featured .wrapper h2 {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  color: var(--text);
+}
+
+.featured-projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
+  margin-bottom: 2.5rem;
+}
+
+.project-card {
+  flex: 1 1 320px;
+  max-width: 420px;
+}
+
+.project-card a {
+  display: block;
+  padding: 1.5rem 1.5rem 1.75rem;
+  border-radius: 1.75rem;
+  background: #FEFCFB;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+  text-align: center;
+  height: 100%;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.project-card a:hover,
+.project-card a:focus-visible {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.07);
+}
+
+.project-card img {
+  width: 100%;
+  border-radius: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.project-card h3 {
+  font-size: 1.05rem;
+  margin-bottom: 0.6rem;
+  color: var(--body);
+}
+
+.project-card p {
+  margin: 0;
+  line-height: 1.5;
+  font-size: 1rem;
+  color: #7191BF;
+}
+
+#featured .btn-secondary {
+  display: inline-block;
+  margin: 0 auto;
+}
+
+/* featured responsive */
+@media (max-width: 800px) {
+  .featured-projects {
+    gap: 1.5rem;
+  }
+}
+
+/* ==== PRE-FOOTER CTA ==== */
+.contact-cta {
+  background-color: color-mix(in srgb, var(--primary) 60%, var(--bg) 40%);
+  color: var(--body);
+  text-align: center;
+  padding: 8rem 1.5rem;
+}
+
+.contact-cta .wrapper {
+  background-color: var(--altbg);
+  max-width: 720px;
+  padding: 4rem 2rem;
+  border-radius: 2.5rem;
+  box-shadow: 0 18px 60px rgba(0, 0, 0, 0.08);
+  position: relative;
+  z-index: 1;
+}
+
+.contact-cta h2 {
+  font-size: 2rem;
+  line-height: 1.1;
+  color: color-mix(in srgb, var(--text) 90%, transparent);
+  padding-bottom: 0.5rem;
+}
+
+.contact-cta p {
+  padding-bottom: 2rem;
+  color: var(--body);
+}
+
+.cta-stickers {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+/* cta sticker positioning */
+.cta-stickers .squiggle {
+  bottom: 10%;
+  right: 2%;
+  width: 80px;
+  color: #8ADBFF;
+  transform: rotate(105deg);
+}
+
+.cta-stickers .sticker-heart.sticker-top {
+  top: 8%;
+  right: 3%;
+  transform: rotate(8deg);
+}
+
+.cta-stickers .sticker-star {
+  top: 7%;
+  left: 3%;
+  transform: rotate(-34deg);
+}
+
+.cta-stickers .sticker-heart.sticker-bottom {
+  bottom: 20%;
+  left: 3%;
+  transform: rotate(-26deg);
+}
+
+.cta-stickers .sticker-small {
+  bottom: 8%;
+  left: 9%;
+  transform: rotate(45deg);
+  max-width: 31px;
+}
+
+  /* cta responsive */
+  @media (max-width: 800px) {
+    .cta-stickers .squiggle {
+      width: 60px;
+    }
+  }

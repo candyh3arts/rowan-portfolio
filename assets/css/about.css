@@ -1,0 +1,268 @@
+/* === GLOBAL MODS === */
+#site-header {
+  background: var(--accent)
+}
+
+/* ==== HERO SECTION ==== */
+#about-hero {
+  background: var(--accent);
+  padding: 4rem 1.5rem 5rem;
+}
+
+#about-hero .wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.about-text {
+  max-width: 540px;
+  position: relative;
+}
+
+.about-text p {
+  padding-bottom: 0.5rem;
+}
+
+.about-text h2 {
+  font-size: 2.25rem;
+  padding-bottom: 0.75rem;
+}
+
+.about-hero-stickers {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  max-width: 100%;
+}
+
+.about-img {
+  max-width: 450px;
+  width: 100%;
+}
+
+.hi-sticker {
+  max-width: 200px;
+}
+/* hero sticker positioning */
+.about-hero-stickers .squiggle {
+  top: -15%;
+  right: -3%;
+  width: 80px;
+  color: #C7B8FF;
+  transform: rotate(150deg);
+}
+
+.about-hero-stickers .sticker-star {
+  bottom: 2%;
+  right: -8%;
+}
+
+.about-hero-stickers .sticker-heart {
+  bottom: -12%;
+  right: 0%;
+  transform: rotate(-17deg);
+}
+
+  /* hero responsive */
+  @media (max-width: 800px) {
+    #about-hero {
+      padding: 2.75rem 1.25rem 3.5rem;
+    }
+
+    #about-hero .wrapper {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .about-text {
+      order: 1;
+    }
+
+    .about-img {
+      order: 2;
+      max-width: 320px;
+    }
+
+    .about-text p {
+      font-size: 0.98rem;
+    }
+
+    .about-hero-stickers .squiggle {
+      display: none;
+    }
+
+    .about-hero-stickers .sticker-star {
+      display: none;
+    }
+
+    .about-hero-stickers .sticker-heart {
+      display: none;
+    }
+
+    .hi-sticker {
+      max-width: 125px;
+    }
+  }
+
+/* ==== MY STORY ==== */
+#journey {
+  padding: 4rem 0;
+  background-color: color-mix(in srgb, var(--primary) 60%, var(--bg) 40%);
+}
+
+#journey .wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  text-align: center;
+}
+
+#journey .wrapper h2 {
+  padding-bottom: 3rem;
+  font-size: 2.5rem;
+  color: var(--text);
+}
+
+.about-journey {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
+  margin-bottom: 2.5rem;
+}
+
+.journey-card{
+  flex: 1 1 320px;
+  max-width: 420px;
+}
+
+.journey-card-inner {
+  display: block;
+  padding: 2rem 3rem;
+  border-radius: 1.75rem;
+  background: var(--altbg);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+  text-align: center;
+  height: 100%;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.journey-card-inner:hover,
+.journey-card-inner:focus-visible {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.07);
+}
+
+.journey-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.6rem;
+  color: var(--body);
+}
+
+.journey-card p {
+  margin: 0;
+  text-align: left;
+  line-height: 1.5;
+  font-size: 1.125rem;
+  color: #7191BF;
+}
+
+  /* journey responsive */
+  @media (max-width: 800px) {
+    #journey .wrappers {
+      padding: 0 1.25rem;
+    }
+
+    .about-journey {
+      gap: 2rem;
+    }
+
+    .journey-card {
+      flex: 1 1 100%;
+      max-width: 100%;
+    }
+
+    .journey-card-inner {
+      padding: 1.5rem 1.5rem;
+    }
+
+    .journey-card p {
+      font-size: 0.98rem;
+    }
+  }
+
+/* === TOOLKIT === */
+#toolkit .wrapper {
+  margin: 6rem auto;
+  background-color: var(--primary);
+  max-width: 960px;
+  padding: 3rem 6.25rem 6rem;
+  border-radius: 2.5rem;
+  box-shadow: 0 18px 60px rgba(0, 0, 0, 0.08);
+}
+
+#toolkit h2 {
+  text-align: center;
+  font-size: 2.25rem;
+  padding-bottom: 2rem; 
+  color: var(--text);
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  color: var(--secondary);
+}
+
+.skills-list li {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 1.25rem;
+  gap: 0.5rem;
+  padding: 1rem 2rem;
+  background-color: var(--altbg);
+  border-radius: 999px;
+  flex: 0 1 auto;
+}
+
+.icon {
+  font-size: 2rem;
+  color: var(--secondary);
+}
+
+.icon img {
+  max-width: 1.75rem;
+  height: auto;
+}
+
+  /* toolkit responsive */
+  @media (max-width: 800px) {
+    #toolkit .wrapper {
+      margin: 3rem 1.25rem 4rem;
+      max-width: fit-content;
+      padding: 2.25rem 1.75rem 2.75rem;
+      border-radius: 2rem;
+    }
+
+    #toolkit h2 {
+      font-size: 1.8rem;
+      padding-bottom: 1.5rem;
+    }
+
+    .skills-list {
+      justify-content: center;
+    }
+
+    .skills-list li  {
+      width: 100%;
+      justify-content: center;
+      font-size: 1rem;
+      padding: 0.75rem 1.25rem;
+    }
+  }
