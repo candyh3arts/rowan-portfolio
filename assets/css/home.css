@@ -49,7 +49,7 @@
   top: -4.5rem;
   left: -8rem;
   width: 100px;
-  color: #8ADBFF;
+  color: #BDD6D6;
 }
 
 .hero-stickers .sticker-heart.sticker-left {
@@ -73,7 +73,7 @@
   top: -4rem;
   right: -7.5rem;
   width: 90px;
-  color: #C7B8FF;
+  color: #A8BF9D;
 }
 
 .hero-stickers .sticker-heart.sticker-right {
@@ -109,7 +109,7 @@
       top: -3rem;
       left: -1rem;
       width: 60px;
-      color: #8ADBFF;
+      color: #BDD6D6;
     }
 
     .hero-stickers .sticker-heart.sticker-left {
@@ -133,7 +133,7 @@
       top: -2.75rem;
       right: -1rem;
       width: 60px;
-      color: #C7B8FF;
+      color: #A8BF9D;
     }
 
     .hero-stickers .sticker-heart.sticker-right {
@@ -220,7 +220,7 @@
   margin: 0;
   line-height: 1.5;
   font-size: 1rem;
-  color: #7191BF;
+  color: var(--mutedtext);
 }
 
 #featured .btn-secondary {
@@ -237,7 +237,7 @@
 
 /* ==== PRE-FOOTER CTA ==== */
 .contact-cta {
-  background-color: color-mix(in srgb, var(--primary) 60%, var(--bg) 40%);
+  background-color: var(--accent);
   color: var(--body);
   text-align: center;
   padding: 8rem 1.5rem;

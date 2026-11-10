@@ -42,13 +42,14 @@ textarea {
 
 /* ==== THEME VARIABLES & FONTS ==== */
 :root {
-  --text: #1D426E;
-  --body: #3B6BA4;
-  --bg: #FEEFF6;
-  --altbg: #FEFCFB;
-  --primary: #FFB7D6;
-  --secondary: #E36DA4;
-  --accent: #FFF1B8;
+  --text: #49352F;
+  --body: #755A51;
+  --bg: #FFF0F1;
+  --altbg: #FBF8F3;
+  --primary: #FBE3E6;
+  --secondary: #E793AD;
+  --accent: #E1ECD0;
+  --mutedtext: #9A8178;
 }
 
 @font-face {
@@ -119,7 +120,7 @@ main.page {
   border-radius: 999px;
   font-size: 1.25rem;
   margin-top: 1.5rem;
-  border: 2px solid #89A6D1;
+  border: 2px solid var(--mutedtext);
   font-weight: 600;
   color: var(--body);
 }
@@ -146,7 +147,7 @@ main.page {
 
 .btn-secondary:hover,
 .btn-secondary:focus-visible {
-  background-color: #89A6D1;
+  background-color: var(--mutedtext);
   color: #fff;
   transform: translateY(-1px);
   box-shadow: 0 6px 16px rgba(29, 66, 110, 0.1);
@@ -221,7 +222,7 @@ header.alt .logo img {
 #nav-menu a {
   display: block;
   text-align: center;
-  color: var(--text);
+  color: var(--body);
   padding: 10px 12px;
   border-radius: 10px;
   transition: color 0.15s ease, background 0.15s ease;
@@ -229,13 +230,13 @@ header.alt .logo img {
 
 #nav-menu a:hover,
 #nav-menu a:focus-visible {
-  background: var(--bg);
-  color: var(--secondary);
+  background: var(--primary);
+  color: var(--text);
   outline: none;
 }
 
 #nav-menu a:focus-visible {
-  outline: 2px solid var(--primary);
+  outline: 2px solid var(--secondary);
   outline-offset: 2px;
 }
 
@@ -279,11 +280,11 @@ header.alt .logo img {
 }
 
 .sticker-heart {
-  color: #F4A7D4;
+  color: #f5a4b6;
 }
 
 .sticker-star {
-  color: #F9C270;
+  color: #F0C58A;
 }
 
 .squiggle {
@@ -333,7 +334,7 @@ header.alt .logo img {
 
 /* ==== ABOUT SECTION (used on Home + About page) ==== */
 #about {
-  background: var(--accent);
+  background: var(--primary);
 }
 
 .about-section {
@@ -420,7 +421,7 @@ img.portrait {
   right: -1rem;
   max-width: 65px;
   transform: rotate(160deg);
-  color: #C7B8FF;
+  color: #A8BF9D;
 }
 
 .about-stickers .sticker-star {

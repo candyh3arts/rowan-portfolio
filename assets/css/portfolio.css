@@ -42,7 +42,7 @@
   margin-bottom: 2.5rem;
   padding: 2rem 1.5rem;
   text-align: center;
-  background-color: var(--altbg);
+  background-color: var(--bg);
   border-radius: 2.5rem;
 }
 
@@ -100,7 +100,7 @@
   margin-bottom: 1rem;
   line-height: 1.5;
   font-size: 1rem;
-  color: #7191BF;
+  color: var(--mutedtext);
 }
 
 .project-details {
@@ -113,12 +113,12 @@
   align-self: flex-start;
   list-style: none;
   padding: 0.5rem 1rem;
-  background: var(--altbg);
+  background: transparent;
   border-radius: 999px;
   font-weight: 600;
-  color: color-mix(in srgb, var(--body) 75%, transparent);
+  color: var(--mutedtext);
   cursor: pointer;
-  border: 2px solid rgba(59, 107, 164, 0.25);
+  border: 2px solid var(--mutedtext);
   margin: 0 auto;
   transition: background 0.15s ease, transform 0.15s ease;
   order: 0;

@@ -1,11 +1,15 @@
 /* === GLOBAL MODS === */
 #site-header {
-  background: var(--accent)
+  background: var(--primary)
+}
+
+body {
+  background: var(--altbg);
 }
 
 /* ==== HERO SECTION ==== */
 #about-hero {
-  background: var(--accent);
+  background: var(--primary);
   padding: 4rem 1.5rem 5rem;
 }
 
@@ -51,7 +55,7 @@
   top: -15%;
   right: -3%;
   width: 80px;
-  color: #C7B8FF;
+  color: #A8BF9D;
   transform: rotate(150deg);
 }
 
@@ -110,7 +114,7 @@
 /* ==== MY STORY ==== */
 #journey {
   padding: 4rem 0;
-  background-color: color-mix(in srgb, var(--primary) 60%, var(--bg) 40%);
+  background-color: var(--accent);
 }
 
 #journey .wrapper {
@@ -167,7 +171,7 @@
   text-align: left;
   line-height: 1.5;
   font-size: 1.125rem;
-  color: #7191BF;
+  color: var(--mutedtext);
 }
 
   /* journey responsive */
@@ -197,7 +201,7 @@
 /* === TOOLKIT === */
 #toolkit .wrapper {
   margin: 6rem auto;
-  background-color: var(--primary);
+  background-color: #F9DADF;
   max-width: 960px;
   padding: 3rem 6.25rem 6rem;
   border-radius: 2.5rem;

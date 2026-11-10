@@ -25,7 +25,7 @@
 }
 
 .contact-text a.btn-secondary:hover {
-  background-color: #89A6D1;
+  background-color: var(--mutedtext);
 }
 
   /* contact text responsive */
