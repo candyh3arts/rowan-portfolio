@@ -244,13 +244,22 @@
 }
 
 .contact-cta .wrapper {
-  background-color: var(--altbg);
+  background-color: white;
   max-width: 720px;
   padding: 4rem 2rem;
   border-radius: 2.5rem;
   box-shadow: 0 18px 60px rgba(0, 0, 0, 0.08);
   position: relative;
   z-index: 1;
+}
+
+.contact-cta .btn-secondary {
+  background-color: white;
+}
+
+.contact-cta .btn-secondary:hover,
+.contact-cta .btn-secondary:focus-visible {
+  background-color: #A8BF9D;
 }
 
 .contact-cta h2 {
@@ -271,12 +280,13 @@
   pointer-events: none;
 }
 
+
 /* cta sticker positioning */
 .cta-stickers .squiggle {
   bottom: 10%;
   right: 2%;
   width: 80px;
-  color: #8ADBFF;
+  color: #BDD6D6;
   transform: rotate(105deg);
 }
 
@@ -293,14 +303,21 @@
 }
 
 .cta-stickers .sticker-heart.sticker-bottom {
-  bottom: 20%;
-  left: 3%;
+  bottom: 15%;
+  left: 8%;
   transform: rotate(-26deg);
+}
+
+.sticker-mascot {
+  position: relative;
+  max-width: 200px;
+  bottom: -20%;
+  left: -21%;
 }
 
 .cta-stickers .sticker-small {
   bottom: 8%;
-  left: 9%;
+  left: 15%;
   transform: rotate(45deg);
   max-width: 31px;
 }
@@ -309,5 +326,9 @@
   @media (max-width: 800px) {
     .cta-stickers .squiggle {
       width: 60px;
+    }
+
+    .sticker-mascot {
+      display: none;
     }
   }

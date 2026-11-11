@@ -125,7 +125,9 @@
 }
 
   .project-details summary:hover {
-    background: var(--secondary-bg);
+    background: #F5FBEB;
+    border-color: #A8BF9D;
+    color: #A8BF9D;
     transform: translateY(-2px);
   }
 
@@ -143,8 +145,9 @@
 }
 
 .project-details[open] summary {
-  background: #eef4ff;
-  border-color: #b7c8f0;
+  background: #F5FBEB;
+  border-color: #A8BF9D;
+  color: #A8BF9D;
   font-weight: 700;
 }
 
@@ -172,7 +175,7 @@
 .project-details p {
   margin-top: 0.5rem;
   line-height: 1.5;
-  color: #7191BF;
+  color: var(--mutedtext);
 }
 
 .details-body::before {
@@ -181,6 +184,6 @@
   margin: 0.75rem auto;
   margin-top: 0;
   max-width: 75%;
-  border-top: 2px solid rgba(59, 107, 164, 0.25);
+  border-top: 2px solid var(--accent);
   opacity: 0.9;
 }

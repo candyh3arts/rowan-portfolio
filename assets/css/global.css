@@ -136,7 +136,7 @@ main.page {
 
 .btn-primary:hover,
 .btn-primary:focus-visible {
-  transform: translateY(-2px);
+  transform: translateY(-3px);
   box-shadow: 0 8px 20px rgba(136, 26, 148, 0.12);
 }
 
@@ -147,7 +147,8 @@ main.page {
 
 .btn-secondary:hover,
 .btn-secondary:focus-visible {
-  background-color: var(--mutedtext);
+  background-color: #A8BF9D;
+  border-color: #A8BF9D;
   color: #fff;
   transform: translateY(-1px);
   box-shadow: 0 6px 16px rgba(29, 66, 110, 0.1);
@@ -406,7 +407,6 @@ img.portrait {
     }
 
     .about-img {
-      order: 1;
       max-width: 320px;
     }
 
