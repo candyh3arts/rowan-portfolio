@@ -6,7 +6,7 @@
   <title>Rowan.dev Portfolio</title>
   <link rel="stylesheet" href="/assets/css/global.css">
   <link rel="stylesheet" href="/assets/css/portfolio.css">
-  <link rel="stylesheet" href="/assets/css/lightbox.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightbox3@1/dist/lightbox3.css">
   <script src="https://kit.fontawesome.com/2b6c891bdb.js" crossorigin="anonymous"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,6 +14,7 @@
   <link rel="icon" type="image/png" size="32x32" href="/images/favicon-32x32.png">
   <link rel="icon" type="image/png" size="16x16" href="/images/favicon-16x16.png">
 </head>
+<script src="https://cdn.jsdelivr.net/npm/lightbox3@1/dist/lightbox3.min.js"></script>
 <body>
   <!-- Header -->
   <header id="site-header" class="alt">
@@ -54,35 +55,43 @@
             <details class="project-details">
               <summary>More info</summary>
               <div class="details-body">
-                <p>This project focused on building a mobile-first website for an outdoor retail brand. A key feature of the site is the use of JavaScript to dynamically generate product content from a data file, along with a category-based filtering system and form validation with UI state changes.</p>
+                <p>This project focused on building a mobile-first website for an outdoor retail brand. The site is uses JavaScript to dynamically generate product content from a data file, along with a category-based filtering system and form validation with UI state changes. <a class= "hyperlink" href="/images/acadia_styleguide.png" data-lightbox="acadia" data-title="Acadia Equipment brand refresh style guide">Branding redesigned from scratch.</a></p>
               </div>
             </details>
           </article>
 
           <article class="project-card">
-            <a href="/images/sleep_full.png" class="thumb-link" data-lightbox="portfolio" data-title="Prototype wireframes for pediatric sleep consultant website." data-hint="View larger ↗">
+            <a href="/images/sleep_full.png" class="thumb-link" data-lightbox="dreamworthy" data-title="Prototype wireframes for pediatric sleep consultant website." data-hint="View larger ↗">
               <img src="/images/sleep_thumb.png" alt="Single wireframe for pediatric sleep consultant website.">
             </a>
+            <div hidden>
+              <a href="/images/sleep_brand.png" data-lightbox="dreamworthy" data-title="Dreamworthy Palette Redesign"></a>
+            </div>
             <h3>Dreamworthy Sleeps Wireframe</h3>
             <p>Pediatric sleep consultant wireframes for the website I'm currently building!</p>
             <details class="project-details">
               <summary>More info</summary>
               <div class="details-body">
-                <p>High-Fi wireframes for a client who wants a soothing but friendly website while maintaining her current brand assets. First project working with a static site generator, Eleventy, for client's blog-style resources. Also incorporates a third party scheduling service.</p>
+                <p>High-Fi wireframes for a client who wants a soothing but friendly website while maintaining her current brand logo. First project working with a static site generator, Eleventy, for client's blog-style resources. Also incorporates a third party scheduling service.</p>
               </div>
             </details>
           </article>
 
           <article class="project-card">
-            <a href="/images/funds_full.png" class="thumb-link" data-lightbox="portfolio" data-title="FutureFunds Website Wireframes." data-hint="View larger ↗">
-              <img src="/images/funds_thumb.png" alt="Single wireframe for financial advisor website.">
+            <a href="/images/funds_desktop_full.png" class="thumb-link" data-lightbox="futurefunds" data-title="FutureFunds Desktop Website Wireframes" data-hint="View gallery ↗">
+              <img src="/images/funds_thumb.png" alt="FutureFunds desktop wireframe preview.">
             </a>
+            <div hidden>
+              <a href="/images/funds_mobile_full.png" data-lightbox="futurefunds" data-title="FutureFunds Mobile Website Wireframes"></a>
+            </div>
+            
             <h3>FutureFunds Wireframes</h3>
             <p>Wireframes for a financial consultation firm, with a focus on modern but approachable design.</p>
             <details class="project-details">
               <summary>More info</summary>
               <div class="details-body">
-                <p>Wireframes for FutureFunds who aim to expand their web presence while marketing towards a young professional demographic. A financial calculator and home-page scheduler were both requested with general improvements to the website's flow and trust-building with users.</p>
+                <p>Wireframes for FutureFunds marketing towards a young professional demographic. A financial calculator and home-page scheduler were both requested with general improvements to the website's flow and trust-building with users.</p>
+                <a class= "hyperlink" href="/assets/futurefunds_justification.pdf" target="_blank" rel="noopener noreferrer">See the full design justification ↗</a>
               </div>
             </details>
           </article>
@@ -97,7 +106,7 @@
           </article>
 
           <article class="project-card">
-            <a href="/images/KIVA.png" class="thumb-link" data-lightbox="portfolio" data-title="FILL LATER" data-hint="View larger ↗">
+            <a href="/images/KIVA.png" class="thumb-link" data-lightbox="kiva" data-title="Mockups for a financial loaning program designed to work with older phones" data-hint="View larger ↗">
               <img src="/images/KIVA.png" alt="FILL LATER">
             </a>
             <h3>KIVA Low-Tech UI Concept</h3>
@@ -120,7 +129,7 @@
           </article>
 
           <article class="project-card">
-            <a href="/images/vet_full.png" class="thumb-link" data-lightbox="portfolio" data-title="Purrfectly Peppy Veterinary Website Wireframes" data-hint="View larger ↗">
+            <a href="/images/vet_full.png" class="thumb-link" data-lightbox="vet" data-title="Purrfectly Peppy Veterinary Website Wireframes" data-hint="View larger ↗">
               <img src="/images/vet_thumb.png" alt="Single wireframe of veterinary website">
             </a>
             <h3>Purrfectly Peppy Vet Wireframes</h3>
@@ -134,28 +143,28 @@
           </article>
 
           <article class="project-card">
-            <a href="/images/foodapp_full.png" class="thumb-link" data-lightbox="portfolio" data-title="Food Delivery App Mid-Fi Wireframes" data-hint="View larger ↗">
+            <a href="/images/foodapp_full.png" class="thumb-link" data-lightbox="delivery" data-title="Food Delivery App Mid-Fi Wireframes" data-hint="View larger ↗">
               <img src="/images/foodapp_thumb.png" alt="Two mobile wireframes of a food delivery app.">
             </a>
             <h3>Food Delivery App Wireframes</h3>
             <p>UI flow exploring interactions, navigation, and mobile layout patterns.</p>
           </article>
 
-          <article class="project-card">
+          <!-- <article class="project-card">
             <a href="/images/persona.png" class="thumb-link" data-lightbox="portfolio" data-title="FILL LATER" data-hint="View larger ↗">
               <img src="/images/persona.png" alt="FILL LATER" >
             </a>
             <h3>User Persona: Target User Profile</h3>
             <p>A visual summary of user behaviors, goals, pain points, and needs to guide design decisions.</p>
-          </article>
+          </article> -->
 
-          <article class="project-card">
+          <!-- <article class="project-card">
             <a href="/images/cloverhill.png" class="thumb-link" data-lightbox="portfolio" data-title="FILL LATER" data-hint="View larger ↗">
               <img src="/images/cloverhill.png" alt="FILL LATER">
             </a>
             <h3>Clover Hill Bakery Branding Guide</h3>
             <p>A warm brand system exploring typography, color palette, and visual identity for a fictional bakery.</p>
-          </article>
+          </article> -->
 
           <article class="project-card">
             <a class="thumb-link" href="https://taupe-beijinho-8fcbd8.netlify.app/"
@@ -186,6 +195,5 @@
     </div>
   </footer>
    <script src="/assets/js/app.js"></script>
-   <script src="/assets/js/lightbox-plus-jquery.min.js"></script>
 </body>
 </html>
